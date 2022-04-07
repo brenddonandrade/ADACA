@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px 16px;
+  margin-bottom: 30px;
 }
 
 .logo {
@@ -57,6 +58,7 @@
 @media (max-width: 800px) {
   .header {
     justify-content: center;
+    margin-bottom: 0;
   }
 
   .navbar {

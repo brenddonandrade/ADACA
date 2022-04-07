@@ -10,3 +10,5 @@
 @import "./utilidades/tipografia.css";
 
 /* Home */
+@import "./home/intro.css";
+@import "./home/about.css";
