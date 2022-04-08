@@ -1,0 +1,47 @@
+.laboratorio {
+  background: var(--cor-c2);
+  padding: 60px 16px;
+
+}
+
+.laboratorio h1 {
+  margin-bottom: 60px;
+}
+
+.laboratario-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.laboratario-content:last-child {
+  margin-top: 60px;
+}
+
+.laboratorio-text  {
+  background: var(--cor-c1);
+  padding: 30px;
+  position: relative;
+  left: -120px;
+}
+
+.laboratorio-text h2 {
+  margin-bottom: 30px;
+}
+
+.laboratorio-text img {
+  position: absolute;
+  right: -25px;
+}
+
+.lab-img {
+  max-width: 670px;
+}
+
+.lab-img img {
+  width: 100%;
+}
+
+.laboratorio-text {
+  max-width: 75ch;
+}
