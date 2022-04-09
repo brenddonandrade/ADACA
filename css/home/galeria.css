@@ -31,12 +31,12 @@
 }
 
 .legenda::before {
-  content:'';
+  content: '';
   display: inline-block;
   width: 0px;
   height: 4px;
   background: var(--cor-c11);
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .item:hover .legenda::before {
