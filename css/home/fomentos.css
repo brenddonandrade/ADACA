@@ -1,0 +1,22 @@
+.fomentos {
+  background: var(--cor-c6);
+  padding: 0 16px;
+}
+
+.fomentos h1 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.fomentos-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.fomentos-content img {
+  margin-bottom: 60px;
+}
