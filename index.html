@@ -18,7 +18,11 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
   <link rel="manifest" href="./img/favicon/site.webmanifest">
 
+  <!-- Estilo -->
   <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Caso JS inativo -->
+  <script>document.documentElement.className += ' js'</script>
 </head>
 
 <body id="home">
@@ -42,17 +46,18 @@
       </header>
     </div>
 
-    <div class="intro-content container">
+    <div class="intro-content container  js-scroll">
       <div class="logo-intro">
         <img src="./img/Logo-Adaca.png" alt="">
       </div>
       <div class="airplane"><img src="./img/decoracao/airplane.svg" alt=""></div>
-      <a href="#intro"><span class="seta" id="seta"><img src="./img/decoracao/seta.svg" alt=""></span></a>
     </div>
+    <a href="#intro"><span class="seta" id="seta"><img src="./img/decoracao/seta.svg" alt=""></span></a>
+
   </section>
 
   <section class="about">
-    <div class="about-content container">
+    <div class="about-content container js-scroll">
       <div>
         <div class="about-text shadow" id="about">
           <h1 class="font-1-xxl cor-c11">História e Missão</h1>
@@ -72,7 +77,7 @@
   </section>
 
   <section class="laboratorio">
-    <div class="container">
+    <div class="container js-scroll">
       <div class="icon" id="laboratorio">
         <h1 class="font-1-xxl cor-c11">Laboratório</h1>
         <img src="./img/decoracao/Dec.svg" alt="">
@@ -105,7 +110,7 @@
   </section>
 
   <section class="parceiros">
-    <div class="container">
+    <div class="container js-scroll">
       <h1 class="font-1-xxl cor-c11" id="parceiros">Parceiros</h1>
       <div class="parceiros-content">
         <div class="parceiros-img">
@@ -122,7 +127,7 @@
   </section>
 
   <section class="fomentos">
-    <div class="container">
+    <div class="container js-scroll">
       <h1 class="font-1-xxl cor-c1" id="fomentos">Fomentos</h1>
       <div class="fomentos-content">
         <a href=""><img src="./img/fomentos/UFF-Logo.png" alt="Logo UFF"></a>
@@ -137,7 +142,7 @@
   </section>
 
   <section class="galeria">
-    <div class="container">
+    <div class="container js-scroll">
       <h1 class="font-1-xxl cor-c1" id="galeria">Galeria</h1>
       <div class="galeria-content">
         <div class="item">
@@ -218,6 +223,8 @@
       </div>
     </footer>
   </section>
+
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
