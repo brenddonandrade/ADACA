@@ -3,3 +3,22 @@
   margin: 0 auto;
 }
 
+.botao {
+  display: inline-block;
+  font: 500 0.875rem/1.25 var(--font-2);
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  background: linear-gradient(to bottom, #002071, #0532a4);
+  border-radius: 4px;
+  color: var(--cor-c1);
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: linear-gradient(to bottom, #002071, #1a49c1);
+}
+
+.shadow {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}

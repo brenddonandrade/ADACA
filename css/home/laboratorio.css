@@ -1,37 +1,13 @@
 .laboratorio {
-  background: var(--cor-c2);
   padding: 60px 16px;
-
+  background: var(--cor-c2);
 }
 
-.laboratorio h1 {
-  margin-bottom: 60px;
-}
-
-.laboratario-content {
+.icon {
   display: flex;
   align-items: center;
-  position: relative;
-}
-
-.laboratario-content:last-child {
-  margin-top: 60px;
-}
-
-.laboratorio-text  {
-  background: var(--cor-c1);
-  padding: 30px;
-  position: relative;
-  left: -120px;
-}
-
-.laboratorio-text h2 {
-  margin-bottom: 30px;
-}
-
-.laboratorio-text img {
-  position: absolute;
-  right: -25px;
+  margin-bottom: 60px;
+  justify-content: space-between;
 }
 
 .lab-img {
@@ -42,6 +18,54 @@
   width: 100%;
 }
 
-.laboratorio-text {
+.lab-content {
+  display: flex;
+  align-items: center;
+}
+
+.lab-content + .lab-content {
+  margin-top: 60px;
+}
+
+.lab-text {
+  background: var(--cor-c1);
+  padding: 30px;
+  border-radius: 4px;
+  position: relative;
+  left: -160px;
+}
+
+.lab-text h2 {
+  margin-bottom: 20px;
+}
+
+.lab-text p {
   max-width: 75ch;
+  margin-bottom: 30px;
+}
+
+.lab-text img {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+}
+
+@media (max-width: 1000px) {
+  .lab-img {
+    max-width: 100%;
+  }
+  .lab-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .lab-text {
+    background: var(--cor-c1);
+    padding: 30px;
+    border-radius: 4px;
+    position: relative;
+    left: 0;
+  }
+  .lab-content > img {
+    display: none;
+  }
 }
