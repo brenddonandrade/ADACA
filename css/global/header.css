@@ -6,6 +6,7 @@
   align-items: center;
   padding: 16px 16px;
   margin-bottom: 30px;
+  background: var(--cor-c1);
 }
 
 .logo {
@@ -35,7 +36,7 @@
   height: 3px;
   background: var(--cor-c11);
   position: absolute;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .navbar a:hover::after {
@@ -47,8 +48,8 @@
   padding: 1rem 2rem;
   background: var(--cor-c5);
   border-radius: 40px;
-  box-shadow: 0 4px 4px #B6E7FF;
-  transition: all .3s ease;
+  box-shadow: 0 4px 4px #b6e7ff;
+  transition: all 0.3s ease;
 }
 
 .botao-header:hover {

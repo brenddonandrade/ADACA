@@ -1,11 +1,12 @@
 .laboratorio {
-  padding: 60px 16px 120px 16px;
+  padding: 60px 16px;
   background: var(--cor-c2);
 }
 
 .icon {
   display: flex;
   align-items: center;
+  padding-top: 30px;
   margin-bottom: 60px;
   justify-content: space-between;
 }

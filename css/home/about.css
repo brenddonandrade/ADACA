@@ -25,9 +25,12 @@
 .img-wrapper img {
   width: 100%;
   border-radius: 4px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .about-content {
     grid-template-columns: 1fr 1fr;
   }
@@ -36,11 +39,11 @@
   }
 }
 
-@media(max-width: 600px){
+@media (max-width: 600px) {
   .about-content {
     grid-template-columns: 1fr;
   }
-  .img-wrapper{
+  .img-wrapper {
     display: none;
   }
 }
