@@ -1,5 +1,5 @@
 .intro {
-  height: 100vh;
+  height: calc(100vh - 112px);
 }
 
 .intro-content {

@@ -16,3 +16,8 @@
 @import './home/parceiros.css';
 @import './home/fomentos.css';
 @import './home/galeria.css';
+
+/* Historia e Missao */
+@import './historia-e-missao/historia.css';
+@import './historia-e-missao/missao.css';
+@import './historia-e-missao/form-about.css ';

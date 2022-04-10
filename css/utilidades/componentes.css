@@ -9,6 +9,7 @@
   letter-spacing: 1.25px;
   text-transform: uppercase;
   padding: 15px 30px;
+  margin-top: 30px;
   background: linear-gradient(to bottom, #002071, #0532a4);
   border-radius: 4px;
   color: var(--cor-c1);
@@ -35,6 +36,7 @@
   bottom: 30px;
   right: 30px;
   transition: 0.1s;
+  z-index: 999;
 }
 
 .seta:hover {
