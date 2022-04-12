@@ -12,6 +12,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;600&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
 
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/a19e8ee270.js" crossorigin="anonymous"></script>
+
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
@@ -35,10 +38,8 @@
         </div>
         <nav>
           <ul class="navbar js-menu font-2-xl cor-c1">
-            <li><a href="#missao">Missão</a></li>
-            <li><a href="#historia">História</a></li>
-            <li><a href="#duvidas">Duvidas</a></li>
-            <li><a href="#index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li></li>
           </ul>
         </nav>
@@ -51,9 +52,17 @@
     <section class="faq" id="faq">
       <div class="faq-container container">
         <h1 class="font-1-xxl cor-c11">FAQ</h1>
-        <ul>
 
-        </ul>
+        <dl>
+          <div class="pergunta">
+            <dt class="font-1-l cor-c10">Pergunta 1 <i class="fa-solid fa-arrow-turn-down fa-2xs"></i></dt>
+            <dt class="font-2-l-a cor-c9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maiores eaque quo possimus eligendi accusamus expedita maxime quisquam numquam assumenda.</dt>
+          </div>
+          <div class="pergunta">
+            <dt class="font-1-l cor-c10">Pergunta 2 <i class="fa-solid fa-arrow-turn-down fa-2xs" data-fa-transform="flip-v"></i></dt>
+            <dt class="font-2-l-a cor-c9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maiores eaque quo possimus eligendi accusamus expedita maxime quisquam numquam assumenda.</dt>
+          </div>
+        </dl>
       </div>
     </section>
   </main>
@@ -77,14 +86,14 @@
         <h2 class="font-1-xl cor-c1">Contato</h2>
         <div class="tel">
           <a href="tel:+552430768869" class="font-2-l-a cor-c8">
-            <span><img src="./img/decoracao/fone.svg" alt=""></span>
+            <span><i class="fa-solid fa-phone fa-xl"></i></span>
             (24) 3076-8869
           </a>
         </div>
         <a href="mailto:" class="font-2-l-a cor-c8">contato@adaca.com</a>
         <div class="icon-footer">
-          <a href="" class="font-2-l-a cor-c8"><img src="./img/decoracao/face.svg" alt=""></a>
-          <a href="" class="font-2-l-a cor-c8"><img src="./img/decoracao/internet.svg" alt=""></a>
+          <a href="" class="font-2-l-a cor-c8"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+          <a href="" class="font-2-l-a cor-c8"><i class="fa-solid fa-globe fa-2xl"></i></a>
         </div>
       </div>
       <div class="footer-item">
@@ -98,6 +107,7 @@
   </section>
 
   <script src="./js/main.js"></script>
+  <script src="./js/animacao-faq.js"></script>
 </body>
 
 </html>

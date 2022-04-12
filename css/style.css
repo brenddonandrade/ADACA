@@ -21,3 +21,6 @@
 @import './historia-e-missao/historia.css';
 @import './historia-e-missao/missao.css';
 @import './historia-e-missao/form-about.css ';
+
+/* Faq */
+@import './faq/faq.css';

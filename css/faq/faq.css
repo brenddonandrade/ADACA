@@ -1,0 +1,29 @@
+.faq {
+  padding: 60px 16px;
+}
+
+.faq h1 {
+  margin-bottom: 30px;
+}
+
+.faq-container dl div {
+  padding: 15px;
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+.faq-container dl div dt {
+  margin-bottom: 20px;
+  max-width: 80ch;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pergunta.ativo {
+  transform: scale(1, -1);  
+}
+
+.faq-container dl div:nth-child(2n) {
+  background: var(--cor-c2);
+}
