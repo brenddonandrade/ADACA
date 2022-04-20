@@ -71,7 +71,7 @@
 .form-about textarea:focus {
   outline: none;
   border-color: var(--cor-p1);
-  background: var(--cor-0);
+  background: var(--cor-c2);
   box-shadow: 0 0 2px #fea;
 }
 
