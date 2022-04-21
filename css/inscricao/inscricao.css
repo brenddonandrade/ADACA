@@ -1,0 +1,18 @@
+/* Correcoes */
+
+#inscricao .header-bg {
+  background: var(--cor-c11);
+}
+
+#inscricao .navbar a::after {
+  background: var(--cor-c1);
+}
+
+#inscricao .botao-header {
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+#inscricao .footer {
+  border-top: none;
+}

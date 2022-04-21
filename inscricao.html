@@ -28,7 +28,7 @@
   <script>document.documentElement.className += ' js'</script>
 </head>
 
-<body id="historia-missao">
+<body id="inscricao">
 
   <section class="header-bg" id="intro">
     <div class="header-bg">
@@ -39,7 +39,7 @@
         <nav>
           <ul class="navbar js-menu font-2-xl cor-c1">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#inscricao">Formulário</a></li>
             <li></li>
           </ul>
         </nav>
@@ -48,33 +48,239 @@
     </div>
   </section>
 
-  <main>
-    <section class="faq" id="faq">
-      <div class="faq-container container">
-        <h1 class="font-1-xxl cor-c11">FAQ</h1>
+  <main class="inscricao container" id="inscricao">
+    <form method="post" class="inscricao" action="recebe.php">
+      <h1 class="font-1-xxl cor-c11">Formulário de inscrição</h1>
+      <section class="form-crianca">
+        <h2 class="font-1-xl cor-c9">Informações da Criança</h2>
+        <div>
+          <label class="font-2-xl cor-c10" for="nome-crianca">Nome:</label>
+          <input type="text" id="nome-crianca" name='nome-crianca' placeholder="Seu nome">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Sexo:</label>
+          <span class="font-2-xl cor-c8">M</span>
+          <input type="radio" name="sexo-crianca" id="sexo-crianca">
+          <span class="font-2-xl cor-c8">F</span>
+          <input type="radio" name="sexo-crianca" id="sexo-crianca">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="data">Data de Nascimento:</label>
+          <input type="date" id="data" name='data'>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="classificacao">Classificação:</label>
+          <input type="text" id="classificacao" name='classificacao' placeholder="Sua classificação">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Encontra-se em escola regular?</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="escola" id="escola">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="radio" name="escola" id="escola">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Sabe ler?</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="leitura" id="leitura">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="radio" name="leitura" id="leitura">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Sabe escrever?</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="escrita" id="escrita">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="radio" name="escrita" id="escrita">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Utiliza mediador no dia a dia?</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="mediador" id="mediador">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="radio" name="mediador" id="mediador">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Utiliza medicamentos?</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="medicamento" id="medicamento">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="radio" name="medicamento" id="medicamento">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="brinquedo">Quais são suas preferências:</label>
+          <label class="font-2-xl cor-c8" for="brinquedo">Brinquedos:</label>
+          <input type="text" id="brinquedo" name='brinquedo' placeholder="Quebra cabeça">
+          <label class="font-2-xl cor-c8" for="alimento">Alimentos:</label>
+          <input type="text" id="alimento" name='alimento' placeholder="Panqueca">
+          <label class="font-2-xl cor-c8" for="bebida">Bebidas:</label>
+          <input type="text" id="bebida" name='bebida' placeholder="Limonada">
+          <label class="font-2-xl cor-c8" for="atividade">Atividades:</label>
+          <input type="text" id="atividade" name='atividade' placeholder="Brincar">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Possui algum medo significativo?(Som, formas, animal)</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="medo" id="medo">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="radio" name="medo" id="medo">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Como se comunica?</label>
+          <span class="font-2-xl cor-c8">Fala</span>
+          <input type="checkbox" name="comunicacao" id="comunicacao">
+          <span class="font-2-xl cor-c8">Gestos</span>
+          <input type="checkbox" name="comunicacao" id="comunicacao">
+          <span class="font-2-xl cor-c8">Ecolalia</span>
+          <input type="checkbox" name="comunicacao" id="comunicacao">
+          <span class="font-2-xl cor-c8">Materiais de suporte</span>
+          <input type="checkbox" name="comunicacao" id="comunicacao">
+          <span class="font-2-xl cor-c8">Outros</span>
+          <input type="checkbox" name="comunicacao" id="comunicacao">
+          <span class="font-2-xl cor-c8">Se outros, quais?</span>
+          <textarea name="comunicao-outos" id="comunicacao" rows="5"></textarea>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Hoje faz algum tipo de terapia ou atividade voltada para o tratamento de autismo</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="checkbox" name="tratamento" id="tratamento">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="checkbox" name="tratamento" id="tratamento">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="tratamento-metodo">Se sim, qual?</label>
+          <input type="text" id="tratamento-metodo" name='tratamento-metodo' placeholder="Terapia ocupacional">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="observacao">Observação:</label>
+          <textarea name="observacao" id="observacao" rows="5"></textarea>
+        </div>
+        <h3 class="font-1-l cor-c9">Avaliação de percepção da motricidade global(fina e ampla)</h3>
+        <div>
+          <label class="font-2-xl cor-c10" for="massa-de-modelar">Trabalha com massa de modelar?</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="massa-de-modelar" id="massa-de-modelar">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="radio" name="massa-de-modelar" id="massa-de-modelar">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="tesoura">Manipula tesoura(sem ponta)?</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="tesoura" id="tesoura">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="radio" name="tesoura" id="tesoura">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="partes-do-corpo">Identifica partes do corpo?</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="partes-do-corpo" id="partes-do-corpo">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="radio" name="partes-do-corpo" id="partes-do-corpo">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="ultrapassa-obstaculos">Ultrapassa obstáculos?</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="ultrapassa-obstaculos" id="ultrapassa-obstaculos">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="radio" name="ultrapassa-obstaculos" id="ultrapassa-obstaculos">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="sobre-desce-escada">Sobe e desce escada?</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="sobre-desce-escada" id="sobre-desce-escada">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="radio" name="sobre-desce-escada" id="sobre-desce-escada">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="abrir-garrafa">Consegue abrir e fechar garrafa com tampa de rosca</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="abrir-garrafa" id="abrir-garrafa">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="radio" name="abrir-garrafa" id="abrir-garrafa">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="objetos-formato">Encaixa objetos em buracos do mesmo formato?</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="objetos-formato" id="objetos-formato">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="radio" name="objetos-formato" id="objetos-formato">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="chutar">Consegue chutar?</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="chutar" id="chutar">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="radio" name="chutar" id="chutar">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="correr">Consegue correr?</label>
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="correr" id="correr">
+          <span class="font-2-xl cor-c8">Não</span>
+          <input type="radio" name="correr" id="correr">
+        </div>
+      </section>
 
-        <dl class="js-accoridon">
-          <div class="pergunta">
-            <dt class="font-1-l cor-c10">Pergunta 1</dt>
-            <dd class="font-2-l-a cor-c9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maiores eaque quo possimus eligendi accusamus expedita maxime quisquam numquam assumenda.</dd>
-          </div>
-          <div class="pergunta">
-            <dt class="font-1-l cor-c10">Pergunta 2</dt>
-            <dd class="font-2-l-a cor-c9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maiores eaque quo possimus eligendi accusamus expedita maxime quisquam numquam assumenda.</dd>
-          </div>
-          <div class="pergunta">
-            <dt class="font-1-l cor-c10">Pergunta 2</dt>
-            <dd class="font-2-l-a cor-c9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maiores eaque quo possimus eligendi accusamus expedita maxime quisquam numquam assumenda.</dd>
-          </div>
-          <div class="pergunta">
-            <dt class="font-1-l cor-c10">Pergunta 2</dt>
-            <dd class="font-2-l-a cor-c9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maiores eaque quo possimus eligendi accusamus expedita maxime quisquam numquam assumenda.</dd>
-          </div>
-        </dl>
-      </div>
-    </section>
+      <section class="form-responsavel">
+        <h2 class="font-1-xl cor-c9">Informações do responsável</h2>
+        <div>
+          <label class="font-2-xl" for="nome-responsavel">Nome:</label>
+          <input type="text" name="nome-responsavel" id="nome-responsavel" placeholder="Seu nome">
+        </div>
+        <div>
+          <label class="font-2-xl" for="cpf">CPF:</label>
+          <input type="text" name="cpf" id="cpf" pattern="[0-9]" placeholder="000-000-000-00">
+        </div>
+        <div>
+          <label class="font-2-xl" for="cpf">CPF:</label>
+          <input type="text" name="cpf" id="cpf" placeholder="000-000-000-00">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Sexo:</label>
+          <span class="font-2-xl cor-c8">M</span>
+          <input type="radio" name="sexo-responsavel" id="sexo-responsavel">
+          <span class="font-2-xl cor-c8">F</span>
+          <input type="radio" name="sexo-responsavel" id="sexo-responsavel">
+        </div>
+        <div>
+          <label class="font-2-xl" for="telefone">Telefone:</label>
+          <input type="tel" name="telefone" id="telefone" placeholder="(24) 9 3333-3333">
+        </div>
+        <div>
+          <label class="font-2-xl" for="celular">Celular:</label>
+          <input type="tel" name="celular" id="celular" placeholder="(24) 9 9999-9999">
+        </div>
+        <div>
+          <label class="font-2-xl" for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="contato@email.com">
+        </div>
+        <div>
+          <label class="font-2-xl" for="endereco">Endereço completo:</label>
+          <input type="text" name="endereco" id="endereco" placeholder="Rua Logo Ali, 306, Bairro Pitanga do Sul">
+        </div>
+        <div>
+          <label class="font-2-xl" for="cep">CEP:</label>
+          <input type="text" name="cep" id="cep" placeholder="27213-145">
+        </div>
+      </section>
+
+      <section class="form-medicamento">
+        <h2 class="font-1-xl cor-c9">Informações do medicamento</h2>
+        <div>
+          <label class="font-2-xl" for="nome-remedio">Nome:</label>
+          <input type="text" name="nome-remedio" id="nome-remedio" placeholder="Ritalina">
+        </div>
+        <div>
+          <label class="font-2-xl" for="laboratorio">Laboratório:</label>
+          <input type="text" name="laboratorio" id="laboratorio" placeholder="Hypera Pharma">
+        </div>
+        <div>
+          <label class="font-2-xl" for="psicologia">Psicologia:</label>
+          <input type="text" name="psicologia" id="psicologia" placeholder="Perguntar">
+        </div>
+      </section>
+    </form>
   </main>
-
 
   <section class="footer-bg">
     <footer class="footer container">
@@ -108,7 +314,7 @@
         <h2 class="font-1-xl cor-c1">Relacionados</h2>
         <ul>
           <li><a href="./index.html" class="font-2-l-a cor-c8">Home</a></li>
-          <li><a href="./inscricao.html" class="font-2-l-a cor-c8">Inscreva-se</a></li>
+          <li><a href="./historia-e-missao.html" class="font-2-l-a cor-c8">História</a></li>
         </ul>
       </div>
     </footer>

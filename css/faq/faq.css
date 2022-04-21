@@ -1,3 +1,22 @@
+/* Correcoes */
+
+#faq .header-bg {
+  background: var(--cor-c11);
+}
+
+#faq .navbar a::after {
+  background: var(--cor-c1);
+}
+
+#faq .botao-header {
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+#faq .footer {
+  border-top: none;
+}
+
 .faq {
   padding: 60px 16px;
 }
