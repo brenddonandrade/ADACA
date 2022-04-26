@@ -70,8 +70,8 @@
 .form-about input[type='email']:focus,
 .form-about textarea:focus {
   outline: none;
-  border-color: var(--cor-p1);
-  background: var(--cor-c2);
+  border-color: var(--cor-p4);
+  background: var(--cor-c1);
   box-shadow: 0 0 2px #fea;
 }
 
