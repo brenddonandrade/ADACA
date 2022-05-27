@@ -50,3 +50,9 @@
   align-items: flex-start;
   gap: 0 30px;
 }
+
+@media(max-width: 600px){
+  .galeria-content {
+    
+  }
+}
