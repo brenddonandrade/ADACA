@@ -1,5 +1,9 @@
 .intro {
   height: calc(100vh - 112px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .intro-content {
@@ -18,4 +22,16 @@
 
 .logo-intro img {
   width: 100%;
+}
+
+@media (max-width: 800px) {
+  .intro {
+    height: calc(100vh - 190px);
+  }
+}
+
+@media (max-width: 600px){
+  .intro {
+    height: calc(100vh - 250px);
+  }
 }
