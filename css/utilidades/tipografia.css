@@ -40,11 +40,11 @@
 .font-2-m-a {
   font: 500 0.875rem/1.25 var(--font-2);
   letter-spacing: 1.25px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .font-2-m-b {
-  font: 500 0.625rem/1.25 var(--font-2);
+  font: 500 0.875rem/1.25 var(--font-2);
   letter-spacing: 1.25px;
   text-transform: uppercase;
 }
